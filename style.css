@@ -1,0 +1,93 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.6rem;
+    background-color: #333;
+    color : #222;
+    line-height: 1.5;
+}
+img{
+    width : 100%;
+}
+.container{
+    background-color: whitesmoke;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    width : 100vw;
+    min-height : 100vh;
+    padding : 5rem;
+}
+
+.container{
+    padding: 20%;
+}
+h1{
+    margin-bottom: 20px;
+}
+h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.show-nav{
+    transform: rotate(-20deg);
+}
+.circle-container{
+    position : fixed;
+    top : -100px;
+    left : -100px;
+}
+.circle{
+    background-color: pink;
+    width : 200px;
+    height : 200px;
+    border-radius: 50%;
+    position : relative;
+    transition: transform 0.5s linear;
+}
+.circle button{
+  
+    position : absolute;
+    top : 65%;
+    left : 60%;
+    background : transparent;
+    border : 0;
+    font-size: 20px;
+}
+
+.circle button:focus{
+    outline : none;
+}
+
+.circle button#open{
+    left : 60%;
+    bottom : 10%;
+    cursor : pointer;
+}
+
+.circle button#close{
+    left : 0%;
+    bottom : 0%;
+    cursor : pointer;
+}
+nav{
+    position : fixed;
+    bottom : 40px;
+    left : 0;
+    z-index : -1;
+}
+nav ul{
+    list-style: none;
+    padding-left : 30px;
+}
+nav ul li{
+    text-transform: uppercase;
+    color : white;
+    margin : 40px 0;
+}
